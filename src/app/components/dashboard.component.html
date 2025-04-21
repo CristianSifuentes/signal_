@@ -1,0 +1,14 @@
+
+ <section class="row">
+   <div class="col-12 col-sm-6">
+     <product-add (productAdded)="productService.addProduct($event)"></product-add>
+     />
+   </div>
+
+   <div class="col-12 col-sm-6">
+     <product-list listName="Listado de personajes" [products]="productService.products()"></product-list>
+   </div>
+ </section>
+
+
+
