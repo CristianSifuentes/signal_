@@ -1,4 +1,23 @@
 <h3>Add Product</h3>
-<input type="text" placeholder="Name" [(ngModel)]="name" />
-<input type="number" placeholder="Price" [(ngModel)]="price" />
-<button (click)="emitProduct()">Add</button>
+
+<input
+  type="text"
+  class="form-control"
+  placeholder="Name"
+  [value]="name()"
+  (change)="name.set(txtName.value)"
+  (input)="name.set(txtName.value)"
+  #txtName
+/>
+
+<input
+  type="number"
+  class="form-control mt-2"
+  placeholder="rice"
+  [value]="price()"
+  (input)="price.set(+txtPrice.value)"
+  #txtPrice
+/>
+
+<button (click)="addProduct()" class="mt-2 btn btn-primary">Addx</button>
+

@@ -1,8 +1,13 @@
-<ul>
+
   <h3>Product List</h3>
+  <h1>Si cargo </h1>
   <ul>
-    <li *ngFor="let product of products()">
-      {{ product.name }} - ${{ product.price }}
-    </li>
+    @for (product of products(); track product.id; let idx = $index) {
+      <li>
+        {{ product.name }} - ${{ product.price }}
+      </li>
+    }
   </ul>
-</ul>
+
+
+

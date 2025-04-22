@@ -5,12 +5,11 @@ import { Product } from '../interfaces/product.interfece';
 
 @Component({
   selector: 'product-list',
-  imports: [CommonModule, FormsModule],
-  standalone: true,
   templateUrl: './product-list.component.html',
 })
 export class ProductListComponent {
   products = input.required<Product[]>();
+
   listName = input.required<string>();
 
 }
