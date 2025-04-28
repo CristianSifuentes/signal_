@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Product } from '../interfaces/product.interfece';
+import { Product } from '../../interfaces/product.interfece';
 
 @Component({
   selector: 'product-list',

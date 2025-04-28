@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
-import {  ProductAddComponent } from './product-add.component';
-import { ProductListComponent } from './product-list.component';
-import { ProductService } from '../services/ProductService';
+import {  ProductAddComponent } from '../product-add/product-add.component';
+import { ProductListComponent } from '../product-list/product-list.component';
+import { ProductService } from '../../services/product-service';
 
 @Component({
   selector: 'dasnhboard',

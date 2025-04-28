@@ -1,7 +1,5 @@
-import { CommonModule } from '@angular/common';
 import { Component, output, signal } from '@angular/core';
-import { FormsModule, NgModel } from '@angular/forms';
-import { Product } from '../interfaces/product.interfece';
+import { Product } from '../../interfaces/product.interfece';
 
 @Component({
   selector: 'product-add',
