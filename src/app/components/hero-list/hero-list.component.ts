@@ -13,7 +13,8 @@ import { Hero } from '../../interfaces/hero.interface';
 
     <ul>
       <li *ngFor="let hero of heroes()">
-        {{ '{' }} hero.name {{ '}' }}
+        <!-- {{ '{' }} hero.name {{ '}' }} -->
+        {{ hero.name }}
         <button (click)="remove(hero.id)">Remove</button>
       </li>
     </ul>
